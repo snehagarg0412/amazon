@@ -5,7 +5,7 @@ const multer=require("multer")
 const cors=require("cors")
 const app=express()
 app.use(express.json())
-app.use(cors())
+app.use(cors()) 
 app.use(express.static("public"))
 const storage=multer.diskStorage({
 
@@ -37,7 +37,7 @@ app.post("/",(req,resp)=>
                     pprice:req.body.pprice,
                     pcat:req.body.pcat,
                     pdesc:req.body.pdesc,
-                     pimg:"http://localhost:7000/uploads/"+req.file.filename
+                     pimg:"https://amazon-4jb4.onrender.com/uploads/"+req.file.filename
                     
                 })
                 const data=newdata.save()
