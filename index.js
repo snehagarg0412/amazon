@@ -37,7 +37,7 @@ app.post("/",(req,resp)=>
                     pprice:req.body.pprice,
                     pcat:req.body.pcat,
                     pdesc:req.body.pdesc,
-                     pimg:"https://amazon-4jb4.onrender.com/uploads/"+req.file.filename
+                    pimg:"https://amazon-4jb4.onrender.com/uploads/"+req.file.filename
                     
                 })
                 const data=newdata.save()
